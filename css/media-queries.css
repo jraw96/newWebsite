@@ -62,6 +62,10 @@
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #resume .main-col { padding-right: 5%; }   
 
+
+   #skills h1 { font: 16px/24px 'opensans-bold', sans-serif; }
+   #skills .main-col { padding-right: 5%; }   
+
    /* Testimonials Section
    ------------------------------------------------------------------- */
    #testimonials .header-col h1:before {

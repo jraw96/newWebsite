@@ -22,10 +22,12 @@
    $('.smoothscroll').on('click',function (e) {
 	    e.preventDefault();
 
-	    var target = this.hash,
+        
+        var target = this.hash,
 	    $target = $(target);
 
 	    $('html, body').stop().animate({
+            
 	        'scrollTop': $target.offset().top
 	    }, 800, 'swing', function () {
 	        window.location.hash = target;
@@ -40,11 +42,15 @@
 	var sections = $("section");
 	var navigation_links = $("#nav-wrap a");
 
+    
+
 	sections.waypoint({
 
       handler: function(event, direction) {
 
-		   var active_section;
+           var active_section;
+           
+           console.log("HEre is the active session: " + JSON.stringify(event) + " " + direction)
 
 			active_section = $(this);
 			if (direction === "up") active_section = active_section.prev();
